@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A0F;
+  --color-card: #12121A;
+  --color-purple: #7C3AED;
+  --color-purple-light: #A78BFA;
+  --color-teal: #06B6D4;
+  --color-teal-light: #67E8F9;
+  --color-text: #F1F0FF;
+  --color-muted: #6B7280;
+  --color-error: #EF4444;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+
+  --font-family-sans: "Outfit", "Inter", sans-serif;
+
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --shadow-glass-purple: 0 8px 32px 0 rgba(124, 58, 237, 0.15);
+  --shadow-glass-teal: 0 8px 32px 0 rgba(6, 182, 212, 0.15);
+}
+
+body {
+  background-color: #0A0A0F;
+  color: #F1F0FF;
+  font-family: "Outfit", "Inter", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom glassmorphism utilities */
+.glass-panel {
+  background: rgba(18, 18, 26, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 18, 26, 0.8);
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.15);
+  transform: translateY(-2px);
+}
+
+.glass-panel-teal {
+  background: rgba(18, 18, 26, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #12121A;
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* Background glow helpers */
+.bg-glow-purple {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-glow-teal {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Text glow */
+.text-glow-purple {
+  text-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.text-glow-teal {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+/* Recharts dark tooltip overrides */
+.recharts-default-tooltip {
+  background-color: #12121A !important;
+  border: 1px solid rgba(124, 58, 237, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.recharts-tooltip-label {
+  color: #F1F0FF !important;
+  font-weight: 600 !important;
+}
+
+.recharts-tooltip-item {
+  color: #A78BFA !important;
+}
+
+/* Remove number input spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
