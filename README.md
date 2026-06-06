@@ -62,11 +62,6 @@ Currently working on:
 
 Current model status:
 
-```bash
-model4/
-└── EmployabilityScore.py
-```
-
 Model pushed successfully.
 
 ---
@@ -89,53 +84,6 @@ Model pushed successfully.
 ### Machine Learning
 
 * Python
-* Employability Score Model
-* Skill Analysis Model
 
----
-
-## Core Modules
-
-### Module 1 – Student Profile
-
-Capture student information, skills, interests, and academic background.
-
-### Module 2 – Career Goal Selection
-
-Allow students to select their desired career path.
-
-### Module 3 – Skill Gap Analysis
-
-Compare current skills against industry expectations.
-
-### Module 4 – Employability Score
-
-Generate a score representing job readiness and career preparedness.
-
-### Module 5 – Career Roadmap
-
-Create personalized 30-60-90 day action plans.
-
-### Module 6 – Project Recommendations
-
-Suggest role-specific projects to strengthen portfolios.
-
-### Module 7 – Portfolio Snapshot
-
-Generate a summary of skills, projects, and employability metrics.
-
-### Module 8 – Industry Collaboration
-
-Connect students with industry opportunities and practical experiences.
-
----
-
-## Future Enhancements
-
-* AI Career Coach
-* Mentor Matching
-* Mock Interviews
-* Internship Marketplace
-* Recruiter Dashboard
-* AI Employability Passport
-
+Current model status:
+Backend pushed successfully
