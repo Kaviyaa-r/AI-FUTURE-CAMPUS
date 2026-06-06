@@ -87,3 +87,4 @@ Model pushed successfully.
 
 Current model status:
 Backend pushed successfully
+Frontend pushed sucessfully 
